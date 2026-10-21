@@ -1,0 +1,178 @@
+/* ==========================================================
+   style.css - EXTERNAL stylesheet for registration.html
+   Colour scheme: black #111111, skin #f3d9c3, light skin #f0c9a5
+   ========================================================== */
+
+/* ---------- Base styles ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3d9c3;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+header h1 { margin: 0; font-size: 2rem; }
+
+header p { color: #f0c9a5; margin: 6px 0 0 0; }
+
+nav {
+  background-color: #000000;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 16px;
+}
+
+/* :hover demonstration on links */
+nav a:hover { color: #f0c9a5; }
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #111111;
+  border-bottom: 3px solid #f0c9a5;
+  padding-bottom: 4px;
+}
+
+/* ---------- The four required selector types ---------- */
+
+/* Element selector: colours every paragraph black */
+p {
+  color: #111111;
+}
+
+/* Class selector: highlighted notice paragraph */
+.notice {
+  background-color: #fde3c8;
+  border-left: 6px solid #b5754a;
+  padding: 12px 16px;
+}
+
+/* ID selector: the form container */
+#registration-form {
+  background-color: #fff8f0;
+  border: 1px solid #d9b99b;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Attribute selector: email input gets a grey border */
+input[type="email"] {
+  border: 1px solid gray;
+}
+
+/* ---------- Form styling ---------- */
+fieldset {
+  border: 2px solid #111111;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+  padding: 14px 16px;
+}
+
+legend {
+  font-weight: bold;
+  color: #111111;
+  padding: 0 8px;
+}
+
+.inner-group {
+  border: 1px dashed #8a6a50;
+  margin-top: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 4px 0;
+}
+
+.inline-label {
+  display: inline;
+  font-weight: normal;
+  margin: 0 16px 0 4px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #8a6a50;
+  border-radius: 4px;
+  background-color: #fff8f0;
+}
+
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* :focus demonstration on inputs */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #b5754a;
+  background-color: #fdeede;
+  box-shadow: 0 0 0 3px rgba(181, 117, 74, 0.35);
+}
+
+/* ---------- Buttons ---------- */
+.button-row { text-align: center; }
+
+button {
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 28px;
+  margin: 0 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* :hover demonstration on buttons */
+button:hover {
+  background-color: #f0c9a5;
+  color: #111111;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 4px 0;
+}

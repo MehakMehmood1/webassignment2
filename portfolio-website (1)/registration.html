@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Inquiry Form | Web Developer Portfolio</title>
+  <!-- PAGE 3: This page uses EXTERNAL CSS only (linked file style.css). -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header: website title -->
+  <header>
+    <h1>Web Developer Portfolio</h1>
+    <p>Project Inquiry Form</p>
+  </header>
+
+  <!-- Navigation: links to all three pages -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="registration.html">Inquiry Form</a>
+  </nav>
+
+  <main>
+    <h2>Send a Project Inquiry</h2>
+    <p class="notice">Fields marked with * are required. This is a front-end demo, so please use dummy details.</p>
+
+    <!-- Inquiry form (no server-side processing needed) -->
+    <form id="registration-form" action="#" method="post">
+
+      <!-- Group 1: Personal details -->
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Ali Khan" required>
+
+        <label for="age">Age (18 to 65)</label>
+        <input type="number" id="age" name="age" min="18" max="65" placeholder="18-65">
+
+        <label for="prefdate">Preferred Date</label>
+        <input type="date" id="prefdate" name="prefdate">
+      </fieldset>
+
+      <!-- Group 2: Account creation -->
+      <fieldset>
+        <legend>Account Creation</legend>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <label for="password">Password * (minimum 8 characters)</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+      </fieldset>
+
+      <!-- Group 3: Project details -->
+      <fieldset>
+        <legend>Project Details</legend>
+
+        <label for="projecttype">Project Type *</label>
+        <select id="projecttype" name="projecttype" required>
+          <option value="" disabled selected>Select a project type</option>
+          <option value="personal-website">Personal Website</option>
+          <option value="landing-page">Business Landing Page</option>
+          <option value="redesign">Website Redesign</option>
+          <option value="other">Other</option>
+        </select>
+
+        <!-- Radio group: only one option can be selected -->
+        <fieldset class="inner-group">
+          <legend>Preferred Contact Method</legend>
+          <input type="radio" id="contact-email" name="contactmethod" value="email" checked>
+          <label for="contact-email" class="inline-label">Email</label>
+          <input type="radio" id="contact-phone" name="contactmethod" value="phone">
+          <label for="contact-phone" class="inline-label">Phone</label>
+        </fieldset>
+
+        <!-- Independent checkboxes -->
+        <fieldset class="inner-group">
+          <legend>Extra Services</legend>
+          <input type="checkbox" id="extra-seo" name="extra_seo" value="seo">
+          <label for="extra-seo" class="inline-label">SEO Setup</label>
+          <input type="checkbox" id="extra-hosting" name="extra_hosting" value="hosting">
+          <label for="extra-hosting" class="inline-label">Hosting Help</label>
+          <input type="checkbox" id="extra-maintenance" name="extra_maintenance" value="maintenance">
+          <label for="extra-maintenance" class="inline-label">Maintenance</label>
+        </fieldset>
+
+        <label for="comments">Additional Information (max 300 characters)</label>
+        <textarea id="comments" name="comments" rows="5" cols="40" maxlength="300" placeholder="Describe your project..."></textarea>
+      </fieldset>
+
+      <!-- Buttons -->
+      <div class="button-row">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+
+    </form>
+  </main>
+
+  <!-- Footer: contact and copyright -->
+  <footer>
+    <p>Contact: student@example.com | Lahore, Pakistan</p>
+    <p>&copy; 2026 Web Developer Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
